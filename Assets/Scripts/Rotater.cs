@@ -1,16 +1,19 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/*
+ * オブジェクトを回転させるだけのスクリプト。
+ * ガラポンに限らず、アタッチすればなんでも回る。
+ */ 
 public class Rotater : MonoBehaviour {
 
-    public int speed = 1;
+    // 回転するスピード
+    public float speed = 1.0F;
 
-	// Use this for initialization
 	void Start ()
     {
     }
 
-	// Update is called once per frame
 	void Update ()
     {
         transform.Rotate(new Vector3(0.0F, 0.5F * speed, 0.0F));

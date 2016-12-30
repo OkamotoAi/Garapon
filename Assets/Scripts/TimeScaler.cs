@@ -1,15 +1,21 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/* 
+ * 時間の流れを早くすることができるスクリプト。
+ * 当時、デバッグに役立つだろうと思い作成した。
+ * しかし、物理演算に影響を与えるため、正確に動作しなくなる。
+ */
 public class TimeScaler : MonoBehaviour {
 
-	// Use this for initialization
+    // タイムスケール
+    public float timeScale = 1.0F;
+
 	void Start () {
 	
 	}
 	
-	// Update is called once per frame
 	void Update () {
-        //Time.timeScale = 3.0F;
+        Time.timeScale = this.timeScale;
 	}
 }

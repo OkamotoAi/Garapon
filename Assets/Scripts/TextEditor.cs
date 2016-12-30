@@ -5,8 +5,10 @@ using System;
 using System.Linq;
 using System.Collections.Generic;
 
-
-
+/*
+ * キャンバスに排出されたボールを表示するためのスクリプト。
+ * クラス名も変数名もひどいことになっていますが、お許し下さい。
+ */
 public class TextEditor : MonoBehaviour {
 
     public GameObject text;
@@ -18,7 +20,6 @@ public class TextEditor : MonoBehaviour {
     private static int[] passed;
     private static List<int> deadNum;
 
-	// Use this for initialization
 	void Start () {
         for (int i = 0; i < isThrough.Length; i++)
         {
@@ -27,7 +28,6 @@ public class TextEditor : MonoBehaviour {
         deadNum = new List<int>();
 	}
 	
-	// Update is called once per frame
 	void Update () {
 	
 	}
