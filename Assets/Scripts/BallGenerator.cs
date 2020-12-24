@@ -50,6 +50,8 @@ public class BallGenerator : MonoBehaviour
             Texture[] textures = Resources.LoadAll<Texture>(textureFileName);
             // 生成したボールオブジェクトにテクスチャを設定
             renderer.material.mainTexture = textures[0];
+            // オブジェクト名にボールの番号を設定
+            ball.name = String.Format("{0}", count);
 
             // 生成数をカウント
             count++;
